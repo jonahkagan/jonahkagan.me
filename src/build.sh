@@ -9,11 +9,8 @@ then
   exit
 fi
 
-cp CNAME $OUT
-
 echo Compiling index.jade
-jade index.jade
-cp index.html $OUT/index.html
+jade index.jade --out $OUT
 
 echo "Compiling script/*.coffee"
 coffee -c -o $OUT/script script
