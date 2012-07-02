@@ -1,0 +1,56 @@
+<title>Z&ouml;llner Illusion</title>
+<script src="../../script/libs/processing-1.3.6.min.js"></script>
+<script src="killscroll.js"></script>
+
+<link rel="stylesheet" type="text/css" href="styles.css" />
+
+<div id="container"> 
+
+
+<section id="content">
+
+<div style="float:right; margin-left:1em; margin-top:1em;">
+    <canvas data-processing-sources="zollner.pde"></canvas>
+</div>
+
+<div>
+
+<h1>Z&ouml;llner Illusion</h1>
+<h3>by Jonah Kagan</h3>
+<h4>made with <a href="http://processingjs.org/">processing.js</a></h4>
+
+<p>
+Use the up/down arrow keys to change the angle of the diagonal lines and use the left/right arrow keys to change the length of the lines. Also, you can hit the spacebar to toggle whether or not the diagonal lines intersect the center line. Type any number from 1-9 to change the number of lines (hint: more lines = more tilt).
+</p>
+
+<h3>What's Going On</h3>
+
+<p>
+The Z&ouml;llner illusion is one of the most well-known <a href="two-element.html">2-element tilt illusions</a>, along with the Poggendorff illusion and the Hering illusion.
+</p>
+
+<p>
+Scientists hypothesize that the effect you are seeing here is caused by what they call acute-angle expansion. Acute-angle expansion means that the acute (&lt; 90 deg.) angles created by the intersection of the diagonal lines with the center line appear to be wider than they actually are. Since the diagonal lines are all grouped together (and are already tilted anyway), the center line appears to tilt away from the diagonal lines, since each segment of the line is the leg of an "expanded" acute angle.
+</p>
+
+<p>
+You may notice that the tilt effect is strongest when the angle of intersection is 10-30 deg. In fact, when the angle gets large enough, you may even start to see the center line tilt the other way. It turns out that there is another effect at play too &mdash; acute-angle contraction. Acute-angle contraction is exactly what it sounds like &mdash; the opposite of acute-angle expansion. Acute-angle expansion is caused by the relationship between the center line and the parts of the diagonal lines closest to the intersection. That's why when you remove the actual intersections by hitting spacebar, the line appears to tilt the opposite direction. When you remove the intersections, you remove the acute-angle expansions, and thus are left only with acute-angle contraction (which is caused by the relationship between each entire diagonal line and the center line).
+</p>
+
+<p>
+Since expansion and contraction are caused by different parts of the diagonal lines, scientists believe these effects are caused at different levels of the visual processing system. Expansion is caused by nearby elements, which each occur in a very small portion of your visual field, so the effect probably results from low-level processing. In other words, since the visual system at its lower levels processes inputs that are closer together (since the processing cells themselves are closer together), the relationship between the lines at the intersections is probably processed at that level. This could explain why expansion isn't as strong for wider angles, since the elements aren't as close together and are thus not processed at such a low level.
+</p>
+
+<p>
+Contraction, on the other hand, occurs even when the lines aren't touching. Thus, the visual processing system must relate data from disparate sectors of the visual field. For this reason, scientists speculate that contraction must be an effect that occurs at a much higher level. Perhaps this explains why strong expansion effects seem to overpower contraction effects. If the high level processors that would create a contraction effect receive data already embedded with the expansion effect, the contraction effect might not be enough to tip the scales back. This might also explain why some mid-range angles seem to have no effect at all &mdash; the two effects could be canceling each other out.
+</p>
+
+<p>
+Why exactly do these expansion and contraction effects occur? That is a problem left to the neurologists, and more fit for another website. Now that we know about these effects, we can see how they apply to other 2-element tilt illusions and even leverage them to create our own tilt illusions.
+</p>
+
+</div>
+
+</section>
+
+</div>

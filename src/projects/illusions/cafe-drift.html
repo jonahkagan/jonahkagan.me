@@ -1,0 +1,43 @@
+<title>Cafe Drift illusion</title>
+<script src="../../script/libs/processing-1.3.6.min.js"></script>
+<script src="killscroll.js"></script>
+
+<link rel="stylesheet" type="text/css" href="styles.css" />
+
+<div id="container"> 
+
+<section id="content">
+
+<div style="float:right; margin-left:1em; margin-top:1em;">
+    <canvas data-processing-sources="cafe_drift.pde"></canvas>
+</div>
+
+<div>
+
+<h1>Cafe Drift Illusion</h1>
+<h3>by Jonah Kagan</h3>
+<h4>made with <a href="http://processingjs.org/">processing.js</a></h4>
+
+<p>
+Press the spacebar to change the order of the colors in every other row (and hence the direction of the illusory motion). You can also use the left/right arrow keys to move those rows horizontally.
+</p>
+
+<h3>What's Going On</h3>
+
+<p>
+This illusion is an attempt to combine the cafe wall and rotating snakes illusions. Since the tilt is caused by three elements, and the motion by four, both effects can coexist mdash; the four elements grouping together into two elements (dark and light) with the gray background as the third. So really there are five elements here.
+</p>
+
+<p>
+Playing around with the directions of motion and the alignment of the rows, it is possible to create configurations which maximize motion and others which maximize tilt. Some configurations even create some of each effect (success!).
+</p>
+
+<p>
+One configuration (the initial one when the page loads) creates a very odd effect. The entire image seems to look blurry. I'm not quite sure why this is happening. It must have something to do with the color interaction (or maybe just luminance), but I can't figure out exactly what about this exact configuration creates the effect.
+</p>
+
+</div>
+
+</section>
+
+</div>

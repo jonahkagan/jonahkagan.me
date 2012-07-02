@@ -1,1 +1,3 @@
 img/*.psd
+node_modules
+public

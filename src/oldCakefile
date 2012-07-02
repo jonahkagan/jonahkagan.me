@@ -1,0 +1,39 @@
+#fs      = require 'fs'
+#{exec}  = require 'child_process'
+
+scripts = [
+  'script/script.coffee',
+  'script/lightning.coffee'
+]
+
+templates = [
+  'index.jade'
+  #'projects/*.jade'
+]
+
+styles = [
+  'style/style.less'
+]
+
+task 'build', 'Compile all coffee, jade, and less', ->
+  invoke 'build:coffee'
+  invoke 'build:jade'
+  #invoke 'build:less'
+
+task 'build:coffee', 'Compile all coffee into js', ->
+  console.log "Compiling coffee files"
+  for file in scripts
+    exec "coffee --compile #{file}", (err, stdout, stderr) ->
+      throw err if err
+
+task 'build:jade', 'Compile all jade into html', ->
+  console.log "Compiling jade files"
+  for file in templates
+    exec "jade #{file}", (err, stdout, stderr) ->
+      throw err if err
+
+task 'build:less', 'Compile all jade into html', ->
+  console.log "Compiling less files"
+  for file in styles
+    exec "lessc #{file} > #{file}.css", (err, stdout, stderr) ->
+      throw err if err
