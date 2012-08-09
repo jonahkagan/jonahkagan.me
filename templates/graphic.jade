@@ -1,0 +1,5 @@
+.span8
+  if meta.image
+    +thumb("images/" + meta.image, meta.href)
+  else if meta.video
+    +video(meta.video)

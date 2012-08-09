@@ -1,0 +1,18 @@
+{
+  "template": "index.jade",
+  "ordering": [
+    "calcoolator",
+    "rubes",
+    "virion",
+    "crosswords",
+    "donnerParty",
+    "bestOfBrown",
+    "illusions",
+    "misc"
+  ],
+  "tools": [
+    { "name": "Wintersmith", "url": "http://jnordberg.github.com/wintersmith" },
+    { "name": "Bootstrap", "url": "http://twitter.github.com/bootstrap/" },
+    { "name": "Processing.js", "url": "http://processingjs.org" }
+  ]
+}

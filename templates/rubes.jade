@@ -1,0 +1,21 @@
+.row
+  .span12
+    +title(meta.id, proj.title)
+
+each v, j in meta.vids
+  vid = contents.projects.rubes[v]
+  .row
+    if (j + idx + 1) % 2 == 0 
+      .span8
+        +video(vid.metadata.src)
+      .span4
+        h3!= vid.title 
+        != vid.html
+    else
+      .span4
+        h3!= vid.title 
+        != vid.html
+      .span8
+        +video(vid.metadata.src)
+
+- idx += meta.vids.length - 1

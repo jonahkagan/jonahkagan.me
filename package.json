@@ -2,9 +2,9 @@
   "name": "jonahkagan.me",
   "subdomain": "jonahkagan",
   "scripts": {
-    "start": "bin/server"
+    "start": "bin/server.js"
   },
-  "version": "0.1.0-6",
+  "version": "0.1.0-10",
   "engines": {
     "node": "0.6.x"
   },

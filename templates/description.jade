@@ -1,0 +1,5 @@
+.span4
+  +title(meta.id, proj.title)
+  != proj.html
+  if meta.btntext
+    +btn(meta.btntext + " &raquo;", meta.href)

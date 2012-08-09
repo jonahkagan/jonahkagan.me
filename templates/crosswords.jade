@@ -1,0 +1,40 @@
+mixin puz(name, blogUrl)
+  span
+    | - 
+    a(href="projects/crosswords/#{name}.puz") [.puz]
+    |  
+    a(href="projects/crosswords/#{name}.pdf") [.pdf]
+    if blogUrl
+      |  (
+      a(href=blogUrl) blog
+      | )
+
+mixin description
+  .span4
+    +title(meta.id, proj.title)
+    != proj.html
+    ul
+      li
+        | NYT Friday, 5/11/11 
+        +puz("NYTMay1111", "http://wordplay.blogs.nytimes.com/2011/05/10/enjoy/")
+      li
+        | NYT Monday, 10/25/10 
+        +puz("NYTOct2510", "http://wordplay.blogs.nytimes.com/2010/10/24/exciting/")
+      li
+        | Brown Daily Herald #8 
+        +puz("ATB8")
+            
+mixin graphic
+  .span8
+    ul.thumbnails
+      li.span4
+        +thumb("images/nytpuzzle.jpg", meta.nyturl)
+      li.span4
+        +thumb("images/word.jpg", meta.wordurl)
+
+if idx % 2 == 0
+  +description
+  +graphic
+else
+  +graphic
+  +description

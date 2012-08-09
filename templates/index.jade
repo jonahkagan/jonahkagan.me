@@ -1,0 +1,81 @@
+extends layout
+
+block content
+  // Hey dude, welcome to... THE SOURCE. I always do this too. I
+  // didn't minify or obscure anything (at least not on purpose), so
+  // hopefully you can figure out what's going on. Otherwise, feel free
+  // to ask me anything via the electronic mail.
+  include mixins
+  .container
+    header.page-header
+      h1
+        a#name(href=locals.url) Jonah Kagan
+        small: a(href="#about") (who?)
+
+    - var projects = _.chain(contents.projects._.directories).map(function (item) {
+    -     return item["descr.md"] || item["descr.json"];
+    -   }).compact().sortBy(function (descr) {
+    -     return page.metadata.ordering.indexOf(descr.metadata.id);
+    -   }).value();
+
+    #start.row
+      .span12
+        canvas#mainCanvas
+      .span4
+        ul#toc.nav.nav-pills.nav-stacked
+          each proj in projects
+            li: a(href="##{proj.metadata.id}")
+              != proj.title.replace('<br/>', '')
+
+    #projects
+      - var idx = -1
+      each proj in projects
+        - idx += 1
+        - var meta = proj.metadata
+        section(id="#{meta.id}")
+          if meta.id == "crosswords"
+            .row
+              include crosswords
+          else if meta.id == "rubes"
+            include rubes
+          else
+            .row
+              if idx % 2 == 0
+                include description
+                include graphic
+              else
+                include graphic
+                include description
+
+    include about
+
+    footer
+      mixin tool(name, url)
+        a(href=url)= name
+
+      p &copy; #{locals.owner} 2012
+        &bullet; Made with 
+        each tool, i in page.metadata.tools
+          if i == page.metadata.tools.length - 1
+            | and 
+            +tool(tool.name, tool.url)
+          else
+            +tool(tool.name, tool.url)
+            , 
+        //-+tool("Jade", "http://jade-lang.com")
+        //-, 
+        //-+tool("Bootstrap", "http://twitter.github.com/bootstrap/")
+        //-, 
+        //-+tool("CoffeeScript", "http://coffeescript.org")
+        //-, and 
+        //-+tool("Processing.js", "http://processingjs.org")
+
+
+  script(src="scripts/lib/jquery-1.7.2.min.js")
+  script(src="scripts/lib/bootstrap/bootstrap.min.js")
+  script(src="scripts/lib/processing-1.3.6.min.js")
+  //-script(src="scripts/lib/underscore-min.js")
+
+  script(src="scripts/script.js")
+  script(src="scripts/lightning.js")
+

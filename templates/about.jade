@@ -1,0 +1,12 @@
+include mixins
+section#about
+  .row
+    .span4.offset2
+      +thumb("images/jonah.jpg", "#")
+    .span4
+      != contents['about.md'].html
+      a.btn.btn-primary(href="mailto:jonahkagan@gmail.com")
+        i.icon-envelope.icon-white
+        span   Get in touch
+
+    

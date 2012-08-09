@@ -1,0 +1,15 @@
+mixin btn(text, href)
+  a.btn.btn-primary(href="#{href}")= text
+
+mixin thumb(src, href)
+  a.thumbnail(href=href)
+    img(src=src)
+
+mixin video(src)
+  div.thumbnail.video.
+    <iframe width="620" height="349" 
+       src="#{src}" frameborder="0"
+       allowfullscreen></iframe>
+
+mixin title(id, t)
+  h2: a(href="##{id}")!= t
