@@ -53,22 +53,19 @@ block content
       mixin tool(name, url)
         a(href=url)= name
 
-      p &copy; #{locals.owner} 2012
-        &bullet; Made with 
+      p
+        | &copy; #{locals.owner} 2012
+        | &bullet; Made with 
         each tool, i in page.metadata.tools
           if i == page.metadata.tools.length - 1
             | and 
             +tool(tool.name, tool.url)
           else
             +tool(tool.name, tool.url)
-            , 
-        //-+tool("Jade", "http://jade-lang.com")
-        //-, 
-        //-+tool("Bootstrap", "http://twitter.github.com/bootstrap/")
-        //-, 
-        //-+tool("CoffeeScript", "http://coffeescript.org")
-        //-, and 
-        //-+tool("Processing.js", "http://processingjs.org")
+            | , 
+        |  &bullet; Hosted by 
+        +tool("Nodejistsu", "http://jit.su/")
+
 
 
   script(src="scripts/lib/jquery-1.7.2.min.js")

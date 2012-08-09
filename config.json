@@ -1,7 +1,7 @@
 {
   "locals": {
-    "url": "http://localhost:8080",
-    "name": "Jonah Kagan",
+    "url": "http://jonahkagan.me",
+    "title": "Jonah Kagan",
     "owner": "Jonah Kagan",
     "description": "I make things with code, words, and pretty much anything else I can get my hands on"
   },

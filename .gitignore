@@ -1,3 +1,4 @@
-img/*.psd
+*.psd
 node_modules
-public
+build
+old
