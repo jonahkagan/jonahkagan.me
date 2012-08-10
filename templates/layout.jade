@@ -10,12 +10,17 @@ html(lang='en')
       //-link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Fredericka+the+Great')
       meta(name="description", content=locals.description)
       meta(name="author", content=locals.owner)
+      link(rel="icon", type="image/x-icon", href="images/favicon.ico")
 
-      link(rel='stylesheet', href='/style/github.css')
-      link(rel='stylesheet', href='/style/main.css')
   body
-    block content
-      p There's no content yet...
+    .container
+      block content
+        p There's no content yet...
+
+      footer
+        block footer
+          | &copy; #{locals.owner} 
+          = moment().format("YYYY")
 
     script(type="text/javascript")
       var _gaq = _gaq || [];

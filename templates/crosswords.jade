@@ -32,9 +32,10 @@ mixin graphic
       li.span4
         +thumb("images/word.jpg", meta.wordurl)
 
-if idx % 2 == 0
-  +description
-  +graphic
-else
-  +graphic
-  +description
+.row
+  if idx % 2 == 0
+    +description
+    +graphic
+  else
+    +graphic
+    +description

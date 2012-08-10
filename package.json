@@ -9,7 +9,8 @@
     "node": "0.6.x"
   },
   "dependencies": {
-    "node-static": "0.6.x"
+    "node-static": "0.6.x",
+    "moment": "1.6.x"
   },
   "domains": [
     "jonahkagan.me",

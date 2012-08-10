@@ -1,0 +1,107 @@
+@import "main.less";
+
+.nolink() {
+  color: @textColor;
+  &:hover {
+    color: @textColor;
+    text-decoration: none;
+  }
+}
+
+.over-canvas() {
+  .user-select(none);
+  position: relative;
+  z-index: 1;
+}
+
+.page-header {
+  margin: 0;
+  border: none;
+  padding: @spcMed 0;
+  border-bottom: 2px solid @black;
+  h1 {
+    font-size: 36px;
+    display: inline;
+    a#name {
+      .nolink();
+      margin-right: @spcSml;
+    }
+    small { font-family: 'NobileRegular'; }
+  }
+}
+
+#start {
+  position: relative;
+  /*padding-bottom: @spcLrg;*/
+  border-width: 2px 0;
+  #toc {
+    margin-top: @spcMed;
+    li a {
+      .over-canvas();
+      .border-radius(0);
+      display: inline-block;
+      padding-left: 0;
+      padding-right: 0;
+      padding: @spcMed 0;
+      /*padding-left: @spcLrg;*/
+      /*padding-right: @spcLrg;*/
+      font-size: 16px;
+      /*padding: 0;*/
+      /*margin: @spcMed @spcSml;*/
+      /*font-weight: bold;*/
+      color: @black;
+      &.bolt {
+        /*color: @linkColor;*/
+        background: none;
+        /*color: @black;*/
+      }
+    }
+  }
+  #mainCanvas {
+    position: absolute;
+    outline: none;
+    /*z-index: -1;*/
+  }
+}
+
+#about {
+  background: lighten(@grayLight, 30);
+  border-bottom: 2px solid @grayDark;
+}
+
+/*@lightest: #fff3e6;*/
+/*@other: hsl(208, 80%, 97%);*/
+/*@darker: darken(@other, 5);*/
+/*@darkest: darken(@other, 15);*/
+/*@accent: #dc609a;*/
+
+@rowPad: @spcLrg * 1.5;
+
+section {
+  padding: @rowPad 0;
+  position: relative;
+  /*width: 940px;*/
+  border-top: 2px solid @grayDark;
+  h2 a { .nolink(); }
+  .row {
+    margin-top: @rowPad;
+    &:first-child { margin-top: 0; }
+    /*&:last-child { padding-bottom: @spcLrg; }*/
+    /*> :first-child .inner { padding-left: @spcLrg; }*/
+    /*> :last-child .inner { padding-right: @spcLrg; }*/
+    .span4 .thumbnail { max-width: 300px; } // for thin pages
+    .span8 .thumbnail { max-width: 620px; } // for thin pages
+    .thumbnail {
+      padding: 0;
+      line-height: 0;
+      border: none;
+      .border-radius(8px);
+      &.video { .border-radius(0); }
+      box-shadow: -3px 3px 2px @grayLight;
+      overflow: hidden;
+      &:hover {
+        box-shadow: -3px 3px 5px @gray;
+      }
+    }
+  }
+}
