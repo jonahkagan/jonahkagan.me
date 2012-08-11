@@ -5,8 +5,7 @@ section#about
       +thumb("images/jonah.jpg", "#")
     .span4
       != contents['about.md'].html
-      a.btn.btn-primary(href="mailto:jonahkagan@gmail.com")
+      a.btn.btn-primary(href="mailto:#{locals.email}")
         i.icon-envelope.icon-white
         span   Get in touch
-
-    
+      span= locals.email
