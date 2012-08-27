@@ -11,7 +11,8 @@
   ],
   "plugins": [
     "wintersmith-less",
-    "wintersmith-coffee"
+    "wintersmith-coffee",
+    "./node_modules/wintersmith-pandoc"
   ],
   "ignore": [
     "style/bootstrap/*",

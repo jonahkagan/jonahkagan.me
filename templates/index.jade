@@ -34,7 +34,6 @@ block content
     each proj in projects
       - idx += 1
       - var meta = proj.metadata
-      - console.log(proj);
       section(id="#{meta.id}")
         if meta.id == "crosswords"
           include crosswords
@@ -50,6 +49,7 @@ block content
             else
               include graphic
               include description
+          //-- console.log(proj);
 
   include about
 

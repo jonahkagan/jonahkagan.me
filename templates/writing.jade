@@ -1,0 +1,14 @@
+.row
+  .span6
+    +title(meta.id, proj.title)
+    != proj.html
+    - var essays = _.chain(contents.projects.writing).filter(function (essay) {
+    -   return !essay.metadata.ignore;
+    - }).sortBy(function (essay) {
+    -   return essay.date;
+    - }).reverse().value();
+    //-- console.log(essays);
+    ul
+      each essay in essays
+        //-- console.log(essay.title);
+        li: a(href=essay.url)= essay.title
