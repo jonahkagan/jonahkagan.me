@@ -46,7 +46,7 @@ themselves.
 The distinction between questions of fact and questions of procedure
 leads naturally to a difference in methodology between scientists and
 computer scientists. When scientists come up with a possible answer to
-a question–––a hypothesis---they try to prove or disprove it using
+a question---a hypothesis---they try to prove or disprove it using
 experiments. Experiments are in essence tests to see whether a
 hypothesis matches the behavior of the natural world. If a hypothesis
 accounts for how the world behaves (or at least the behavior that the
