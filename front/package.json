@@ -1,0 +1,9 @@
+{
+  "name": "jonahkagan.me-front",
+  "version": "0.1.0",
+  "devDependencies": {
+    "wintersmith-less": "0.1.x",
+    "wintersmith-coffee": "0.1.x",
+    "wintersmith-showdown": "git://github.com/lhagan/wintersmith-showdown.git"
+  }
+}

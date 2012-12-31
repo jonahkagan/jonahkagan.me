@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Version Control - Jonah Kagan
+    </title>
+    <meta name="description" content="I make things with code, words, and pretty much anything else I can get my hands on.">
+    <meta name="author" content="Jonah Kagan">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/style/essay.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="span7">
+          <header>
+            <h1>Version Control</h1>
+            <h3>By <a href="http://jonahkagan.me">Jonah Kagan</a></h3>
+            <p>July, 2012
+            </p>
+          </header>
+          <section class="essay"><p>When programmers write code, they use version control software to
+track their changes as they work. It&#8217;s similar to how writers work in
+drafts, except instead of adding a number to the end of the file name
+each time they save, they have tools that handle all the details for
+them.</p>
+
+<p>When I decided to start writing essays, it seemed natural
+to use version control to manage my drafts. So I set up
+<a href="http://git-scm.com">Git</a>, my weapon of choice, to start tracking my edits.
+Every time I make a change to an essay, I &#8220;commit&#8221; it, which tells Git
+to remember what changed since I last committed.</p>
+
+<p>Git is different from, say, the autosave feature in Microsoft Word, in
+that I have to tell Git when I&#8217;ve made changes. Why not use a system
+that notices changes automatically? Well, when it comes to programming
+there are plenty of reasons. For instance, your code might not be in a
+working state when the autosave kicks in, and when working
+collaboratively, that could mean breaking things for somebody else.</p>
+
+<p>But you can&#8217;t break anything when you&#8217;re writing, and plus, I&#8217;m
+working alone. So why use Git? Well, in the beginning, I chose Git out
+of habit. Now I&#8217;m starting to realize that Git is having an
+interesting effect on my writing process.</p>
+
+<p>Every time I commit changes, Git asks me to write a short message
+summarizing the effect of the changes. As a programmer, the messages
+are useful if I need to undo a commit or see what my teammates are
+working on. As a writer, the messages themselves aren&#8217;t very useful,
+but having to write them forces me to think about the effect of the
+edits I&#8217;ve made. Thinking about my edits makes me take a step back and
+reflect on the essay as a whole. The question &#8220;What did I change?&#8221;
+leads quickly to questions like &#8220;Why did I change it?&#8221; and &#8220;How did
+that change affect the essay?&#8221;</p>
+
+<p>Looking at one&#8217;s work from a macro perspective is a valuable skill to
+develop as a writer. And it&#8217;s a difficult one&#8211;that&#8217;s why we have
+editors, after all. Git&#8217;s commit message prompt is like a little
+reminder to be my own editor.</p>
+
+<p>I have a feeling there&#8217;s also a second, more subtle benefit that comes
+from writing commit messages. Besides being more conscious of the
+essay I&#8217;m working on, I also think more about my writing process. This
+hasn&#8217;t led to any great insights yet, but I like to think of it as an
+investment in the future. If I put in a little extra effort now, maybe
+I&#8217;ll benefit from it in the future.</p>
+
+<p>This idea of trading small amounts of work for larger benefits down
+the line is the principle that underlies version control in general.
+Programmers are hoping that if they ever have to undo changes in the
+future, keeping track of all the changes along the way will be
+helpful. I&#8217;m hoping that all the little bits of self-observation that
+come from writing commit messages will congeal into a more significant
+insight.</p>
+
+<p>I&#8217;m not the first to think this way. Buddhists assign great importance
+to a practice they call mindfulness, which consists of trying to be
+aware of one&#8217;s mind and body in the present moment. Mindfulness is one
+of elements of the Noble Eightfold Path&#8211;the path to enlightenment.
+Some practitioners try to achieve mindfulness through longform
+meditation. Others, though, try to live with mindfulness as they go
+about their everyday activities.</p>
+
+<p>The hardest part of trying to live with mindfulness, though, is
+remembering to do it. There are millions of stimuli constantly
+provoking our attention and shifting our thoughts. Being aware of your
+mind and body is easy while taking a hot bath, but much harder when
+navigating traffic or having a conversation.</p>
+
+<p>But this is the nature of the practice of mindfulness. Practicing
+mindfulness requires being mindful enough to remember to practice it.
+Paradoxically, using version control when I write has prompted me to
+be more mindful <em>without</em> having to think about it. Assuming
+mindfulness is something to be desired, perhaps version control could
+be used to stealthily promote mindfulness in other areas.</p>
+
+<p>For instance, what if version control was used in schools to track
+students&#8217; homework and tests? If asked to write summaries of their
+work, students might become more conscious of their own learning. More
+conscious learners would not only learn better, but also might be more
+invested in their own learning. Many recent attempts to inject
+technology into the classroom focus on aggregating data for teachers
+or administrators. While version control would aggregate data as well,
+the real benefit would come from the hidden side effect of promoting
+mindful learning.</p>
+
+<p>And what about version control on the larger scale? What would it mean
+to apply version control to governments? Sure, we probably couldn&#8217;t
+undo the results of an election that didn&#8217;t work out so well, but
+could we create a culture of mindfulness, where politicians actively
+log and reflect on their work?</p>
+
+<p>If these ideas don&#8217;t seem feasible, just think about how much data we
+log in our everyday lives on email or social networks. We&#8217;ve become
+quite adept at archiving our thoughts in the process of sharing them
+with others. The idea with version control is to turn the focus back
+onto ourselves. We&#8217;re used to telling our computers what we&#8217;re
+thinking. The question is, are we willing to think about what we&#8217;re
+telling our computers?</p></section>
+          <p class="alert alert-success">Thoughts? Am I <span id="adjective"></span>?<br>Let me know: <a href="mailto:jonahkagan@gmail.com">jonahkagan@gmail.com</a></p><script type="text/javascript">
+(function() {
+  var adjectives, changeAdj;
+
+  adjectives = ["crazy", "wrong", "stupid", "a genius", "boring you", "the next Paul Graham", "out of my mind", "not worth the time", "like you always imagined me", "interesting enough that you'll send this to your friends", "the very best, like no one ever was", "an abysmal writer", "grammatically correct", "begging to be punched in the face", "the best thing since sliced bread"];
+
+  changeAdj = function() {
+    var adj;
+    adj = adjectives[Math.floor(Math.random() * adjectives.length)];
+    return document.getElementById("adjective").innerHTML = adj;
+  };
+
+  changeAdj();
+
+  setInterval(changeAdj, 7000);
+
+}).call(this);
+</script>
+        </div>
+      </div>
+      <footer>&copy; Jonah Kagan 2012 &bullet; <a href="http://jonahkagan.me">jonahkagan.me</a>
+      </footer>
+    </div>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-32901857-1']);
+      _gaq.push(['_trackPageview']);
+      
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

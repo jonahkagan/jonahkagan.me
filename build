@@ -1,0 +1,19 @@
+#!/bin/bash
+
+echo "Cleaning prod..."
+rm -rf prod/*
+
+echo "Building front end..."
+cd front
+./build
+cd ..
+echo "Copying front end to prod..."
+cp -R front/public prod
+
+echo "Copying back end to prod..."
+cp -R back/server.js prod
+cp -R back/node_modules prod
+cp back/package.json prod
+cp back/Procfile prod
+
+echo "Done!"

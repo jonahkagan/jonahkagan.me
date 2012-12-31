@@ -1,0 +1,50 @@
+<title>Tilting Tilts illusion</title>
+<script src="/scripts/lib/processing-1.3.6.min.js"></script>
+<script src="killscroll.js"></script>
+
+<link rel="stylesheet" type="text/css" href="styles.css" />
+
+<div id="container"> 
+
+
+<section id="content">
+
+<div style="float:right; margin-left:1em; margin-top:1em;">
+    <canvas data-processing-sources="tilting_tilts.pde"></canvas>
+</div>
+
+<div>
+
+<h1>Tilting Tilts Illusion</h1>
+<h3>by Jonah Kagan</h3>
+<h4>made with <a href="http://processingjs.org/">processing.js</a></h4>
+
+<p>
+Use the left/right arrow keys to change the angle of the elements. If you don't believe that the columns are exactly vertical, press spacebar for proof.
+</p>
+
+<h3>What's Going On</h3>
+
+<p>
+This illusion is a variation on the Fraser illusion family. The Fraser illusion is a 3-element tilt illusion, meaning it consists of two high-contrast sets of elements (white and black) and one neutral set (gray). The alternating black and white tilted groups of elements (which in this case consist of the word "TILT") are grouped together by the visual system into columns. Why do these columns look tilted when the elements are tilted at certain angles? The effect is actually similar to the <a href="zollner.html">Z&ouml;llner illusion</a> mdash; it's acute-angle expansion and contraction. 
+</p>
+
+<p>
+For angles from 10-30 degrees, acute-angle expansion occurs, meaning the angle between each tilted element group and the actual alignment of the line (which is perfectly vertical) appears to be larger, causing the entire line to appear to tilt, in this case clockwise. For angles &gt; 30 degrees or &lt; 10 degrees, acute-angle contraction occurs, causing the angles to appear smaller, and the line to tilt the opposite direction, in this case counterclockwise.
+</p>
+
+<p>
+You may also notice that the columns drift slightly, the opposite tilting columns moving in opposite directions. You can also sometimes get this effect by scrolling the page up and down (the columns might appear to jiggle). 3-element tilt illusions can also give rise to these corresponding anomalous motion illusions.
+</p>
+
+<p>
+Due to the <a href="http://en.wikipedia.org/wiki/Motion_perception#The_aperture_problem">aperture problem</a>, each pair of white and black element groups has a motion bias along the line orthagonal to the tilt of the groups. In other words, if the edge between the white and black elements in a pair is tilted at a certain angle, then it is easier for you to perceive that group moving along the imaginary line that intersects the edge at a 90 degree angle. Therefore, the groups in the center square are biased to move in the opposite direction from the groups outside the square.
+</p>
+
+<p>
+When your eyes make minute movements to gather more visual data (scientists call it "retinal slip"), the groups all appear to move in one direction, depending on which way your eyes move. Since everything you see moves, your brain realizes that nothing is actually moving. But since the opposing groups are biased to move in different directions, when your eyes move, they appear to move in almost the same direction, but each also appears to move a little bit in the direction it is biased to move in. Thus, when their common movement is filtered out, they appear to move away from each other. The contrast between their movements just makes the effect stronger.
+</div>
+
+</section>
+
+</div>

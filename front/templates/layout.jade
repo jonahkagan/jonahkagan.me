@@ -1,0 +1,36 @@
+!!! 5
+html(lang='en')
+  head
+    block head
+      meta(charset='utf-8')
+      title
+        block title
+          = locals.title
+      //-link(rel='alternate', href=locals.url+'/feed.xml', type='application/rss+xml', title=locals.description)
+      //-link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Fredericka+the+Great')
+      meta(name="description", content=locals.description)
+      meta(name="author", content=locals.owner)
+      link(rel="icon", type="image/x-icon", href="/images/favicon.ico")
+
+  body
+    .container
+      block content
+        p There's no content yet...
+
+      footer
+        block footer
+          | &copy; #{locals.owner} 
+          = moment().format("YYYY")
+          |  &bullet; 
+          a(href=locals.url) jonahkagan.me
+
+    script(type="text/javascript")
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-32901857-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();

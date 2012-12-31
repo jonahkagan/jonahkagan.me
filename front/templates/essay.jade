@@ -1,0 +1,48 @@
+extends layout
+
+mixin date(date)
+  = locals.moment(date).format("MMMM, YYYY")
+
+block prepend title
+  | #{page.title} - 
+
+block append head
+  link(rel='stylesheet', href='/style/essay.css')
+
+block content
+  .row: .span7
+    header
+      h1= page.title
+      h3
+        | By 
+        a(href=locals.url)= locals.owner
+      p: +date(page.date)
+    section.essay!= page.html
+    p.alert.alert-success
+      | Thoughts? Am I 
+      span#adjective
+      | ?<br>Let me know: 
+      a(href="mailto:#{locals.email}")= locals.email
+    :coffeescript
+      adjectives = [
+        "crazy"
+        "wrong"
+        "stupid"
+        "a genius"
+        "boring you"
+        "the next Paul Graham"
+        "out of my mind"
+        "not worth the time"
+        "like you always imagined me"
+        "interesting enough that you'll send this to your friends"
+        "the very best, like no one ever was"
+        "an abysmal writer"
+        "grammatically correct"
+        "begging to be punched in the face"
+        "the best thing since sliced bread"
+      ]
+      changeAdj = ->
+        adj = adjectives[Math.floor Math.random() * adjectives.length];
+        document.getElementById("adjective").innerHTML = adj;
+      changeAdj()
+      setInterval changeAdj, 7000

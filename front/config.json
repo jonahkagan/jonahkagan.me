@@ -1,0 +1,20 @@
+{
+  "locals": {
+    "url": "http://jonahkagan.me",
+    "title": "Jonah Kagan",
+    "owner": "Jonah Kagan",
+    "email": "jonahkagan@gmail.com",
+    "description": "I make things with code, words, and pretty much anything else I can get my hands on."
+  },
+  "output": "./public",
+  "require": [],
+  "plugins": [
+    "wintersmith-less",
+    "wintersmith-coffee",
+    "./node_modules/wintersmith-showdown"
+  ],
+  "ignore": [
+    "style/bootstrap/*",
+    "*.psd"
+  ]
+}

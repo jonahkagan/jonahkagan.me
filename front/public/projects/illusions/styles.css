@@ -1,0 +1,40 @@
+body { 
+    font-family:Helvetica, Arial, sans-serif;
+}
+
+a:visited { color:#1C4306; }
+
+#container {
+	margin: 1em;
+}
+
+#content {
+    margin-top:1em;
+}
+
+.pleft {
+    float: left;
+    margin-right: 1em;
+    /*margin-top: 1em;*/
+}
+
+.rightbar {
+    padding-left: 1em;
+    padding-right: 1em;
+    background: #E2FFDE;/*DEF4FF;/*E3F6FF;//D1F0FF;*/ 
+    overflow: hidden;
+    /* must be same as sketch height */
+    height: 500px;
+}
+
+nav ul {
+    padding:.5em;
+    background:#DEF4FF;/*E2FFDE;*/
+    list-style-type: none;
+    margin: 0;
+}
+nav ul li {
+    margin-right: 1em;
+    display: inline;
+}
+
