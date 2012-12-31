@@ -16,4 +16,8 @@ cp -R back/node_modules prod
 cp back/package.json prod
 cp back/Procfile prod
 
+cd prod
+git add .
+git commit -m "build"
+
 echo "Done!"
