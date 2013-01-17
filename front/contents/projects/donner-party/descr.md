@@ -1,6 +1,6 @@
 ---
 title: Donner Party&#58; <br/>The Musical
-id: donnerParty
+id: donner-party
 video: http://www.youtube.com/embed/7bngXAnDdbc
 ---
 

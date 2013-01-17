@@ -1,12 +1,13 @@
 {
   "template": "index.jade",
   "ordering": [
+    "schematic-ipsum",
     "calcoolator",
     "rubes",
     "virion",
     "crosswords",
-    "donnerParty",
-    "bestOfBrown",
+    "donner-party",
+    "best-of-brown",
     "illusions",
     "writing",
     "misc"

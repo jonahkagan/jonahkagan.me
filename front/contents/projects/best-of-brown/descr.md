@@ -1,6 +1,6 @@
 ---
 title: Best of Brown
-id: bestOfBrown
+id: best-of-brown
 image: bestofbrown.jpg
 href: http://bestofbrown.com
 btnText: Check it out
