@@ -6,7 +6,7 @@ image: illusions.jpg
 btnText: Get your mind blown
 ---
 
-One of the reasons I love Brown University is that I get to take
+One of the reasons I love Brown University is that I got to take
 quirky courses like the one I took on optical illusions, which was
 co-taught by [Leslie
 Welch](http://www.brown.edu/Departments/CLPS/people/leslie-welch), a

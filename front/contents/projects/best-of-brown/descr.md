@@ -2,11 +2,9 @@
 title: Best of Brown
 id: best-of-brown
 image: bestofbrown.jpg
-href: http://bestofbrown.com
+href: http://bestofbrown.herokuapp.com
 btnText: Check it out
 ---
-
-<!--template: essay.jade-->
 
 One day my friend asked me if there was a list of the best
 courses at Brown. Since I couldn't think of any, I decided to
